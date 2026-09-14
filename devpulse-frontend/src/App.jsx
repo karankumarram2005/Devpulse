@@ -25,8 +25,8 @@ export default function App() {
   const [previewImage, setPreviewImage] = useState(null);
   const [isWelcomeOpen, setIsWelcomeOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-  const [githubInput, setGithubInput] = useState('karankumarram2005');
-  const [leetcodeInput, setLeetcodeInput] = useState('karan-kumar-ram');
+  const [githubInput, setGithubInput] = useState('');
+  const [leetcodeInput, setLeetcodeInput] = useState('');
 
   const [savedProfiles, setSavedProfiles] = useState(() => {
     const saved = localStorage.getItem('devpulse_saved_profiles');

@@ -1,5 +1,5 @@
-dotenv.config();
 import dotenv from 'dotenv';
+dotenv.config();
 import multer from 'multer';
 import express from 'express';
 import passport from 'passport';

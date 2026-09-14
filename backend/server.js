@@ -36,6 +36,10 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(passport.initialize());
 
+app.get('/', (req, res) => {
+    res.json({ message: 'DevPulse Backend is working!' });
+});
+
 // 3. API Routes
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/devpulse', devpulseRoutes);
