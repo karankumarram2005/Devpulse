@@ -8,7 +8,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'devpulse_super_secret_jwt_key_2026
 const COOKIE_OPTIONS = {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
+    sameSite: 'none',
     maxAge: 7 * 24 * 60 * 60 * 1000
 };
 
